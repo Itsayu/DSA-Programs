@@ -56,6 +56,10 @@ int main(){
     nr.push(5);
     nr.push(7);
     nr.push(11); 
-    
-    cout<<nr.peek()<<endl;
+    int n=nr.size;
+    for(int i=0; i<n; i++){
+        int akt = nr.peek();
+        nr.pop();
+        cout<<akt<<endl;
+    }
 }
