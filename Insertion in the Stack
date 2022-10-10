@@ -51,6 +51,7 @@ class Stack{
 
 int main(){
     Stack nr(6);
+    cout<<"Enter the elements to be inserted: "<<endl;
     for(int j=0; j<6; j++){
         int iti;
         cin>>iti;
@@ -63,6 +64,7 @@ int main(){
     for(int i=0; i<n; i++){
         int akt = nr.peek();
         nr.pop();
-        cout<<akt<<" ";
+        cout<<akt<<endl;
     }
+    // cout<<nr.peek()<<endl;
 }
