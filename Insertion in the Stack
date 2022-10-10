@@ -1,0 +1,68 @@
+#include<iostream>
+#include<stack>
+using namespace std;
+
+class Stack{
+    public:
+    int *arr;
+    int top;
+    int size;
+    
+    Stack(int size){
+        this->size = size;
+        arr = new int[size];
+        top = -1;
+    }
+    void push(int element){
+         if(size - top > 1){
+             top++;
+             arr[top] = element;
+         }
+         else{
+             cout<<"Stack Overflow"<<endl;
+         }
+    }
+    void pop(){
+        if(top >= 0){
+            top--;
+        }
+        else{
+            cout<<"Stack underflow"<<endl;
+        }
+    }
+    int peek(){
+        if(top >= 0 && top < size){
+            return arr[top];
+        }
+        else{
+            cout<<"Stack is Empty"<<endl;
+            return -1;
+        }
+    }
+    bool isEmpty(){
+        if(top==-1){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+};
+
+int main(){
+    Stack nr(6);
+    for(int j=0; j<6; j++){
+        int iti;
+        cin>>iti;
+        nr.push(iti);
+    }
+    
+    cout<<"Elements in the satck: "<<endl;
+    
+    int n=nr.size;
+    for(int i=0; i<n; i++){
+        int akt = nr.peek();
+        nr.pop();
+        cout<<akt<<" ";
+    }
+}
