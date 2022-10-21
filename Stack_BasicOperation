@@ -52,10 +52,10 @@ int main(){
     Stack nr(6);
     nr.push(1);
     nr.push(22);
-    nr.push(9);
-    nr.push(5);
     nr.push(7);
-    nr.push(11); 
+    nr.push(11);
+    nr.push(9);
+    nr.push(5); 
     int n=nr.size;
     for(int i=0; i<n; i++){
         int akt = nr.peek();
