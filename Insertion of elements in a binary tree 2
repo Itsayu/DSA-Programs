@@ -20,7 +20,7 @@ node* buildTree(node* root){
     cin>>data;
     root = new node(data);
     
-    if(data == -1){
+    if(data < 0){
         return NULL;
     }
     cout<<"Enter the data for inserting in left of "<<data<<endl;
