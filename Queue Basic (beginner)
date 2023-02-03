@@ -3,6 +3,7 @@
 using namespace std;
 
 int main(){
+
     queue<int> nr;
     nr.push(1);
     nr.push(22);
