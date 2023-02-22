@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+int binarySearch(int arr[], int size, int key){
+    int start = 0;
+    int end = size-1;
+    int mid = start + (end-start)/2;
+    
+    while(start <= end){
+        if(arr[mid] == key){
+            return mid;
+        }
+        else if(key < arr[mid]){
+            end = mid-1;
+        }
+        else{
+            start = mid+1;
+        }
+        mid = start + (end-start)/2;
+    }
+    return -1;
+}
+
+int main(){
+    int arr[10] = {1,4,7,9,11,16};
+    int size = sizeof(arr)/sizeof(int);
+    int index =  binarySearch(arr, size, 3);
+    cout<<"Index of 3 is "<<index<<endl;
+}
