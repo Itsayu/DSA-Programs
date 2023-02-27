@@ -3,13 +3,13 @@ using namespace std;
 
 void printArray(int nr[5])  
 {  
-    int min = nr[0];
+    int max = nr[0];
     for(int i=0; i<5; i++){
-        if(nr[i] > min){
-            min = nr[i];
+        if(nr[i] > max){
+            max = nr[i];
         }
     }
-    cout<<"The max. value of the array is: "<<min<<endl;
+    cout<<"The max. value of the array is: "<<max<<endl;
 }  
 
 int main()  
