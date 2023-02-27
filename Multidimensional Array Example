@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int nr[3][3];
+    nr[0][0] = 1;
+    nr[0][1] = 2;
+    nr[0][2] = 3;
+    nr[1][0] = 4;
+    nr[1][1] = 5;
+    nr[1][2] = 6;
+    nr[2][0] = 7;
+    nr[2][1] = 8;
+    nr[2][2] = 9;
+    
+    for(int i=0; i<3; i++){
+        for(int j=0; j<3; j++){
+            cout<<nr[i][j]<<"  ";
+        }
+        cout<<endl;
+    }
+}
