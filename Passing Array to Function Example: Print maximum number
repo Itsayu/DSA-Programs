@@ -1,0 +1,21 @@
+#include <iostream>  
+using namespace std;  
+
+void printArray(int nr[5])  
+{  
+    int min = nr[0];
+    for(int i=0; i<5; i++){
+        if(nr[i] > min){
+            min = nr[i];
+        }
+    }
+    cout<<"The max. value of the array is: "<<min<<endl;
+}  
+
+int main()  
+{  
+        int even[5] = {8,6,10,2,4};    
+        int odd[5] = {5,9,1,7,3};    
+        printArray(even); //passing array to function    
+        printArray(odd);  
+}  
