@@ -26,6 +26,7 @@ class Node{
         cout<<"Memory free for node with data: "<<val<<endl;
     }
 };
+
 // traversing the linked list
 void print(Node* head){
     Node* temp = head; 
