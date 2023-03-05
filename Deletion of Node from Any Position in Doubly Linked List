@@ -1,4 +1,5 @@
 // If the starting Node is NULL (remove, Node* nr = new Node(95) from 'main' function and allocate Node* head=NULL  and Node* tail=NULL)
+
 #include<iostream>
 using namespace std;
 
